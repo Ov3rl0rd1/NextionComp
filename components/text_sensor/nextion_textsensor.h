@@ -5,7 +5,7 @@
 #include "../nextion_base.h"
 
 namespace esphome {
-namespace nextion {
+namespace nextion_custom {
 class NextionTextSensor;
 
 class NextionTextSensor : public NextionComponent, public text_sensor::TextSensor, public PollingComponent {
@@ -28,5 +28,5 @@ class NextionTextSensor : public NextionComponent, public text_sensor::TextSenso
     this->set_state(state_value, publish, send_to_nextion);
   }
 };
-}  // namespace nextion
+}  // namespace nextion_custom
 }  // namespace esphome

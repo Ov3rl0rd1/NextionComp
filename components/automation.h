@@ -3,7 +3,7 @@
 #include "nextion.h"
 
 namespace esphome {
-namespace nextion {
+namespace nextion_custom {
 
 class SetupTrigger : public Trigger<> {
  public:
@@ -42,5 +42,5 @@ class TouchTrigger : public Trigger<uint8_t, uint8_t, bool> {
   }
 };
 
-}  // namespace nextion
+}  // namespace nextion_custom
 }  // namespace esphome

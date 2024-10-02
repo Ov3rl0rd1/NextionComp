@@ -3,7 +3,7 @@
 #include "esphome/core/log.h"
 
 namespace esphome {
-namespace nextion {
+namespace nextion_custom {
 
 static const char *const TAG = "nextion_switch";
 
@@ -48,5 +48,5 @@ void NextionSwitch::set_state(bool state, bool publish, bool send_to_nextion) {
 
 void NextionSwitch::write_state(bool state) { this->set_state(state); }
 
-}  // namespace nextion
+}  // namespace nextion_custom
 }  // namespace esphome

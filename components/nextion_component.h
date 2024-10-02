@@ -4,7 +4,7 @@
 #include "nextion_base.h"
 
 namespace esphome {
-namespace nextion {
+namespace nextion_custom {
 class NextionComponent;
 
 class NextionComponent : public NextionComponentBase {
@@ -45,5 +45,5 @@ class NextionComponent : public NextionComponentBase {
 
   // void send_state_to_nextion() = 0;
 };
-}  // namespace nextion
+}  // namespace nextion_custom
 }  // namespace esphome

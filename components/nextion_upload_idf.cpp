@@ -13,7 +13,7 @@
 #include <esp_http_client.h>
 
 namespace esphome {
-namespace nextion {
+namespace nextion_custom {
 static const char *const TAG = "nextion.upload.idf";
 
 // Followed guide
@@ -360,7 +360,7 @@ bool Nextion::upload_end_(bool successful) {
   return successful;
 }
 
-}  // namespace nextion
+}  // namespace nextion_custom
 }  // namespace esphome
 
 #endif  // USE_ESP_IDF

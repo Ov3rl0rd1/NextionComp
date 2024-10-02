@@ -4,7 +4,7 @@
 #include "esphome/core/defines.h"
 
 namespace esphome {
-namespace nextion {
+namespace nextion_custom {
 
 enum NextionQueueType {
   NO_RESULT = 0,
@@ -99,5 +99,5 @@ class NextionComponentBase {
 
   bool needs_to_send_update_;
 };
-}  // namespace nextion
+}  // namespace nextion_custom
 }  // namespace esphome

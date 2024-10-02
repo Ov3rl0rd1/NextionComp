@@ -26,7 +26,7 @@
 #endif  // USE_NEXTION_TFT_UPLOAD
 
 namespace esphome {
-namespace nextion {
+namespace nextion_custom {
 
 class Nextion;
 class NextionComponentBase;
@@ -1346,5 +1346,5 @@ class Nextion : public NextionBase, public PollingComponent, public uart::UARTDe
   uint32_t started_ms_ = 0;
   bool sent_setup_commands_ = false;
 };
-}  // namespace nextion
+}  // namespace nextion_custom
 }  // namespace esphome

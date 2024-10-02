@@ -15,7 +15,7 @@
 #endif
 
 namespace esphome {
-namespace nextion {
+namespace nextion_custom {
 static const char *const TAG = "nextion.upload.arduino";
 
 // Followed guide
@@ -380,7 +380,7 @@ WiFiClient *Nextion::get_wifi_client_() {
 }
 #endif  // USE_ESP8266
 
-}  // namespace nextion
+}  // namespace nextion_custom
 }  // namespace esphome
 
 #endif  // USE_ARDUINO

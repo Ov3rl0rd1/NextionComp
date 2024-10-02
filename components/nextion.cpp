@@ -5,7 +5,7 @@
 #include <cinttypes>
 
 namespace esphome {
-namespace nextion {
+namespace nextion_custom {
 
 static const char *const TAG = "nextion";
 
@@ -815,7 +815,7 @@ void Nextion::process_nextion_commands_() {
   ESP_LOGN(TAG, "Loop End");
   // App.feed_wdt(); Remove before master merge
   this->process_serial_();
-}  // namespace nextion
+}  // namespace nextion_custom_custom
 
 void Nextion::set_nextion_sensor_state(int queue_type, const std::string &name, float state) {
   this->set_nextion_sensor_state(static_cast<NextionQueueType>(queue_type), name, state);
@@ -1165,5 +1165,5 @@ void Nextion::set_wait_for_ack(bool wait_for_ack) { ESP_LOGE(TAG, "This command 
 
 bool Nextion::is_updating() { return this->is_updating_; }
 
-}  // namespace nextion
+}  // namespace nextion_custom_custom
 }  // namespace esphome

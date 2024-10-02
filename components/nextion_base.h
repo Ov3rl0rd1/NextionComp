@@ -3,7 +3,7 @@
 #include "esphome/core/color.h"
 #include "nextion_component_base.h"
 namespace esphome {
-namespace nextion {
+namespace nextion_custom {
 
 #ifdef ESPHOME_LOG_HAS_VERY_VERBOSE
 #define NEXTION_PROTOCOL_LOG
@@ -60,5 +60,5 @@ class NextionBase {
   bool is_detected_ = false;
 };
 
-}  // namespace nextion
+}  // namespace nextion_custom
 }  // namespace esphome

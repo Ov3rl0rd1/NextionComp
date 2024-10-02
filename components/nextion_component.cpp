@@ -1,7 +1,7 @@
 #include "nextion_component.h"
 
 namespace esphome {
-namespace nextion {
+namespace nextion_custom {
 
 void NextionComponent::set_background_color(Color bco) {
   if (this->variable_name_ == this->variable_name_to_send_) {
@@ -112,5 +112,5 @@ void NextionComponent::update_component_settings(bool force_update) {
     this->font_id_needs_update_ = false;
   }
 }
-}  // namespace nextion
+}  // namespace nextion_custom
 }  // namespace esphome

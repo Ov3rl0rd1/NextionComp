@@ -5,7 +5,7 @@
 #include "../nextion_base.h"
 
 namespace esphome {
-namespace nextion {
+namespace nextion_custom {
 class NextionBinarySensor;
 
 class NextionBinarySensor : public NextionComponent,
@@ -38,5 +38,5 @@ class NextionBinarySensor : public NextionComponent,
  protected:
   uint8_t page_id_;
 };
-}  // namespace nextion
+}  // namespace nextion_custom
 }  // namespace esphome

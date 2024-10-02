@@ -5,7 +5,7 @@
 #include "../nextion_base.h"
 
 namespace esphome {
-namespace nextion {
+namespace nextion_custom {
 class NextionSwitch;
 
 class NextionSwitch : public NextionComponent, public switch_::Switch, public PollingComponent {
@@ -30,5 +30,5 @@ class NextionSwitch : public NextionComponent, public switch_::Switch, public Po
  protected:
   void write_state(bool state) override;
 };
-}  // namespace nextion
+}  // namespace nextion_custom
 }  // namespace esphome
